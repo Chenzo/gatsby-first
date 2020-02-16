@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     title: `Mr. Chenzo's Writings on the Sea Of Theives`,
@@ -20,15 +22,8 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`, //didn't add this?
+    `gatsby-transformer-sharp`, 
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
