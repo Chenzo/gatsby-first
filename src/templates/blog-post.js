@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 export default ({ data }) => {
   const post = data.markdownRemark
+
   return (
     <Layout>
     <SEO title={post.frontmatter.title} description={post.excerpt} />
